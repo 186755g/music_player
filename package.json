@@ -1,0 +1,44 @@
+{
+  "name": "frost-player",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Frost Player — a dark glassmorphism Linux desktop music player for Mint, built with Electron, TypeScript, and Vite.",
+  "main": "dist-electron/main/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:electron": "tsx src/main/main.ts",
+    "build": "tsc -b && vite build",
+    "build:electron": "tsc -p tsconfig.node.json",
+    "lint": "tsc --noEmit",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:unit": "vitest run src/**/*.test.ts",
+    "test:ui": "vitest run --environment jsdom",
+    "package:linux": "npm run build && npm run build:electron && electron-builder --config electron-builder.config.cjs --linux --publish never",
+    "package:appimage": "electron-builder --config electron-builder.config.cjs --linux AppImage --publish never",
+    "package:deb": "electron-builder --config electron-builder.config.cjs --linux deb --publish never"
+  },
+  "dependencies": {
+    "electron": "30.4.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.1",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react-swc": "3.4.0",
+    "electron-builder": "24.13.1",
+    "jsdom": "25.0.1",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3",
+    "vite": "^4.5.0",
+    "vitest": "2.1.8"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

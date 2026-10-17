@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#8ad7ff"/>
+      <stop offset="38%" stop-color="#7e8cff"/>
+      <stop offset="100%" stop-color="#0b101a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.85)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="640" rx="320" fill="url(#bg)"/>
+  <circle cx="320" cy="260" r="160" fill="rgba(255,255,255,0.12)"/>
+  <circle cx="320" cy="260" r="108" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.25)"/>
+  <path d="M185 208c54-80 216-97 266-12 28 48 18 121-20 172-40 55-121 74-188 49-95-37-112-157-58-209Z" fill="rgba(255,255,255,0.10)"/>
+  <circle cx="320" cy="260" r="20" fill="rgba(255,255,255,0.55)"/>
+  <path d="M220 430c36-31 76-42 100-42 52 0 81 20 129 48" stroke="rgba(255,255,255,0.45)" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <title>Frost Player album art</title>
+</svg>
